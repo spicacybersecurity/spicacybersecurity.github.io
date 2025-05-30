@@ -12,65 +12,84 @@
       padding: 0;
       background-color: #0b0c10;
       color: #c5c6c7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      width: 100%;
+    }
+
     header {
       background-color: #1f2833;
-      padding: 2rem;
+      padding: 2rem 1.5rem;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
       color: #66fcf1;
     }
+
     section {
-      padding: 2rem;
+      padding: 2rem 0;
     }
+
     h2 {
       color: #45a29e;
     }
+
     footer {
       text-align: center;
-      padding: 1rem;
+      padding: 1rem 0;
       background-color: #1f2833;
       color: #66fcf1;
+      margin-top: auto;
     }
   </style>
 </head>
-<body style="margin: 0; min-height: 100vh; position: relative; padding-bottom: 60px;">
+<body>
   <header>
-    <h1>Spica Cybersecurity</h1>
-    <p>Professional cybersecurity services tailored for your organization</p>
+    <div class="container">
+      <h1>Spica Cybersecurity</h1>
+      <p>Professional cybersecurity services tailored for your organization</p>
+    </div>
   </header>
 
-  <section>
-    <h2>Our Services</h2>
-    <ul>
-      <li><strong>Penetration Testing</strong>: Black-box, white-box, and grey-box audits to evaluate your system's resilience.</li>
-      <li><strong>Vulnerability Assessments</strong>: In-depth scans and manual reviews to identify and prioritize risks.</li>
-      <li><strong>Social Engineering Simulations</strong>: Phishing campaigns, physical security checks, and employee awareness testing.</li>
-      <li><strong>Web & API Security</strong>: Manual and automated audits of your web applications and APIs using industry best practices.</li>
-      <li><strong>Security Consultancy</strong>: Continuous or ad-hoc advisory tailored to your business needs and threat model.</li>
-    </ul>
-  </section>
+  <main class="container">
+    <section>
+      <h2>Our Services</h2>
+      <ul>
+        <li><strong>Penetration Testing</strong>: Black-box, white-box, and grey-box audits to evaluate your system's resilience.</li>
+        <li><strong>Vulnerability Assessments</strong>: In-depth scans and manual reviews to identify and prioritize risks.</li>
+        <li><strong>Social Engineering Simulations</strong>: Phishing campaigns, physical security checks, and employee awareness testing.</li>
+        <li><strong>Web & API Security</strong>: Manual and automated audits of your web applications and APIs using industry best practices.</li>
+        <li><strong>Security Consultancy</strong>: Continuous or ad-hoc advisory tailored to your business needs and threat model.</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Why Choose Spica?</h2>
-    <p>We combine hands-on offensive security experience with a practical mindset. Whether you're a startup or an established business, we help you identify and remediate security weaknesses before they can be exploited.</p>
-  </section>
+    <section>
+      <h2>Why Choose Spica?</h2>
+      <p>We combine hands-on offensive security experience with a practical mindset. Whether you're a startup or an established business, we help you identify and remediate security weaknesses before they can be exploited.</p>
+    </section>
 
-  <section>
-    <h2>About Spica</h2>
-    <p>Spica Cybersecurity was founded with the goal of helping businesses protect their digital assets in an ever-evolving threat landscape. We work with clients globally to assess, secure, and improve their cybersecurity posture through custom engagements.</p>
-  </section>
+    <section>
+      <h2>About Spica</h2>
+      <p>Spica Cybersecurity was founded with the goal of helping businesses protect their digital assets in an ever-evolving threat landscape. We work with clients globally to assess, secure, and improve their cybersecurity posture through custom engagements.</p>
+    </section>
 
-  <section>
-    <h2>Contact Us</h2>
-    <p>Email: spicacybersecurity@duck.com</p>
-  </section>
+    <section>
+      <h2>Contact Us</h2>
+      <p>Email: spicacybersecurity@duck.com</p>
+    </section>
+  </main>
 
-  <footer style="position: absolute; bottom: 0; width: 100%; text-align: center; padding: 1rem 0; background-color: #1c1c1c; color: #00ffff;">
-      © 2025 Spica Cybersecurity. All rights reserved.
+  <footer>
+    © 2025 Spica Cybersecurity. All rights reserved.
   </footer>
-
 </body>
 </html>
